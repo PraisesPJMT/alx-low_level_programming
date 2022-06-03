@@ -3,7 +3,7 @@
 /**
   * main - Entry point
   *
-  * Description: Displays last digit of int n
+  * Description: Display all aphabets in lower case
   *
   * Return: Zero (0)
   */
@@ -11,8 +11,8 @@ int main(void)
 {
 	char str;
 
-	str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	str = tolower(str);
-	putchar("%c\n", str);
+	for (str = "a"; str <= "z"; str++)
+		putchar(str);
+	putchar("\n");
 	return (0);
 }

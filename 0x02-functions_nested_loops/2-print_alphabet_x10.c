@@ -1,12 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - check the code
- *
  * print_alphabet_x10 - prints alphabets 10 times
- * returns 0 if successful.
- *
- * Return: Always 0.
+ * return void
  */
 void print_alphabet_x10(void)
 {
@@ -21,10 +17,4 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 		i++;
 	}
-	return (0);
-}
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
 }

@@ -13,7 +13,7 @@ void times_table(void)
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-		for (col = 1 col <= 9; col++)
+		for (col = 1; col <= 9; col++)
 		{
 			num = (row * col);
 			if ((num / 10) > 0)

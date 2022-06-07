@@ -10,7 +10,7 @@ int main(void)
 {
 	int i, multSum;
 
-	for (i = 0; i < 1024; 1++)
+	for (i = 0; i < 1024; i++)
 		if (((i % 3) == 0) || ((i % 5) == 0))
 			multSum += i;
 	printf("%d\n", multSum);

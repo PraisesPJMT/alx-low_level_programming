@@ -12,14 +12,3 @@ void print_alphabet(void)
 		_putchar(str);
 	_putchar('\n');
 }
-
-/**
-  * main - main code
-  * Descritption: prints alphabets from a - z
-  * Return: 0 always
-  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}

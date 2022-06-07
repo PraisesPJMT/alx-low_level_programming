@@ -1,12 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - check the code
- *
  * print_alphabet - prints alphabets 10 times
  * returns 0 if successful.
- *
- * Return: Always 0.
  */
 void print_alphabet(void)
 {
@@ -15,9 +11,14 @@ void print_alphabet(void)
 	for (str = 'a'; str <= 'z'; str++)
 		_putchar(str);
 	_putchar('\n');
-	
 	return (0);
 }
+
+/**
+  * main - main code
+  * Descritption: prints alphabets from a - z
+  * Return: 0 always
+  */
 int main(void)
 {
 	print_alphabet();

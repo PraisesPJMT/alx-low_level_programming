@@ -5,9 +5,9 @@
   * @i: interger to find
   * Return: absolut value
   */
-int _abs(int i)
+int _abs(int)
 {
-	int j = abs(i);
+	int j = abs();
 
 	_putchar(j);
 	return (0);

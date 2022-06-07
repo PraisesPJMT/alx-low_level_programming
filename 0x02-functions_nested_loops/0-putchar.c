@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 #include <string.h>
 
 /**
@@ -15,9 +15,9 @@ int main(void)
 
 	while (i < strlen(str))
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }

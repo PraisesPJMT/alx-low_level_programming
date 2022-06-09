@@ -1,5 +1,3 @@
-#ifndef MAIN_H
-#define MAIN_H
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
@@ -14,4 +12,3 @@ int isPrime(long int n);
 long int biggestFactor(long int a);
 void print_number(int n);
 int numDigits(int n);
-#endif

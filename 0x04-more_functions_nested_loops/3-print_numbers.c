@@ -3,6 +3,7 @@
 /**
   * print_numbers - Print numbers from 0 - 9
   * Description: Use only _putchar twice
+  * Return: void
   */
 void print_numbers(void)
 {

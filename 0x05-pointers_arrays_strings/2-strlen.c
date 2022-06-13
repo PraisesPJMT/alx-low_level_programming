@@ -5,12 +5,7 @@
   * @s: Input character
   * Return: zero (Nothing)
   */
-int _strlen(char *s);
+int _strlen(char *s)
 {
-	int i;
-
-	i = 0;
-	while (*(s + 1))
-		i++;
-	return (i);
+	return (strlen(*s));
 }

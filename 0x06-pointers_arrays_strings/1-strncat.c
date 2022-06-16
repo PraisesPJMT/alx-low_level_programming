@@ -1,26 +1,27 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ *_strncat - Concatenate strings
+ *@dest: String Destination
+ *@src: String Source
+ *@n: Integer of source string
  *
- * Return: Always 0.
+ *Return: String destination (dest)
  */
-int main(void)
+char *_strncat(char *dest, char *src, int n)
 {
-	char s1[98] = "Hello ";
-	char s2[] = "World!\n";
-	char *p;
+	int j = 0;
+	int i = 0;
 
-	printf("%s\n", s1);
-	printf("%s", s2);
-	p = _strncat(s1, s2, 1);
-	printf("%s\n", s1);
-	printf("%s", s2);
-	printf("%s\n", p);
-	p = _strncat(s1, s2, 1024);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", p);
-	return (0);
+	while (dest[i] != '\0')
+		i++;
+
+	for (j = 0; src[j] != '\0'; j++)
+	{
+		if (j < n)
+			dest[j + i] = src[j];
+		else
+			dest[j + i] = '\0';
+	}
+	return (dest);
 }

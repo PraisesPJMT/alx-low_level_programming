@@ -17,5 +17,5 @@ Dir:    0x07-pointers_arrays_strings
 03 - strspn
 04 - strpbrk
 05 - strstr
-06 - Chess is mental torturee
+06 - Chess is mental torture
 07 - The line of life is a ragged diagonal between duty and desir

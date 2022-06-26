@@ -14,30 +14,37 @@ char *str_concat(char *s1, char *s2)
 	char *newLoc;
 
 	s1len = s2len = 0;
-	for (i = 0; s1[i] != '\0'; i++)
+	if (s1 == NULL)
 	{
-		s1len++;
+		s1len = 0;
 	}
-	for (i = 0; s2[i] != '\0'; i++)
+	else
 	{
-		s2len++;
+		for (i = 0; s1[i] != '\0'; i++)
+			s1len++;
+	}
+	if (s2 == NULL)
+	{
+		s2len = 0;
+	}
+	else
+	{
+		for (i = 0; s2[i] != '\0'; i++)
+			s2len++;
 	}
 	newLoc = malloc(sizeof(char) * (s1len + s2len + 1));
 	if (newLoc == 0)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < (s1len + s2len); i++)
-	{
-		if (i < s1len)
-		{
-			newLoc[i] = s1[i];
-		}
-		else
-		{
-			newLoc[i] = s2[i - s1len];
-		}
-	}
+	if (s1 == s2 && s1 == NULL)
+		*newLoc = '\0';
+	else
+		for (i = 0; i < (s1len + s2len); i++)
+			if (i < s1len)
+				newLoc[i] = s1[i];
+			else
+				newLoc[i] = s2[i - s1len];
 	newLoc[i + 1] = '\0';
 	return (newLoc);
 }

@@ -28,7 +28,6 @@ int **alloc_grid(int width, int height)
 			{
 				addr = arr[row];
 				free(addr);
-				return (NULL);
 			}
 			free(arr);
 			return (NULL);

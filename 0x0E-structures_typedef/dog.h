@@ -11,18 +11,12 @@
  *	name, owner, and age to the structure "dog"
  */
 
-struct dog
+typedef struct dog
 {
 	char *name;
 	char *owner;
 	float age;
-};
-
-/**
- * dog_t - Typeof for structure dog
- */
-
-typedef struct dog dog_t;
+} dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 

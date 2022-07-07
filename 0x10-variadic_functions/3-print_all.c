@@ -15,44 +15,44 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int counter = 0, j, i = 0;
-	char *p;
-	const char arguments[] = "cifs";
-	va_list myList;
+	va_list arg;
+	char *string;
+	const char argType[] = "ifsc";
+	unsigned int count, index, entry;
 
-	va_start(myList, format);
-	while (format && format[counter])
+	va_start(arg, format);
+	count = index = 0;
+	while (format && format[count])
 	{
-		j = 0;
-		while (arguments[j])
+		entry = 0;
+		while (argType[entry])
 		{
-			if (format[counter] == arguments[j] && i)
+			if (format[count] == argType[entry] && index)
 			{
 				printf(", ");
 				break;
-			} j++;
+			} entry++;
 		}
-		switch (format[counter])
+		switch (format[count])
 		{
-		case 'c':
-			printf("%c", va_arg(myList, int)), i = 1;
-			break;
-		case 'i':
-			printf("%d", va_arg(myList, int)), i = 1;
-			break;
-		case 'f':
-			printf("%f", va_arg(myList, double)), i = 1;
-			break;
-		case 's':
-			p = va_arg(myList, char *), i = 1;
-			if (!p)
-			{
-				printf("(nil)");
+			case 'i':
+				printf("%d", va_arg(arg, int)), index = 1;
 				break;
-			}
-			printf("%s", p);
-			break;
-		} counter++;
-	}
-	printf("\n"), va_end(myList);
+			case 'f':
+				printf("%f", va_arg(arg, double)), index = 1;
+				break;
+			case 'c':
+				printf("%c", va_arg(arg, int)), index = 1;
+				break;
+			case 's':
+				string = va_arg(arg, char *);
+				if (string == NULL)
+				{
+					printf("(nul)"), index = 1;
+					break;
+				}
+				printf("%s", string), index = 1;
+				break;
+		} count++;
+	} printf("\n"), va_end(arg);
 }

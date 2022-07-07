@@ -48,7 +48,7 @@ void print_all(const char * const format, ...)
 				string = va_arg(arg, char *);
 				if (string == NULL)
 				{
-					printf("(nul)"), index = 1;
+					printf("(nil)"), index = 1;
 					break;
 				}
 				printf("%s", string), index = 1;

@@ -40,7 +40,7 @@ void print_all(const char * const format, ...)
 				printf("%d", va_arg(arg, int)), index = 1;
 				break;
 			case 'f':
-				printf("%lf", va_arg(arg, double)), index = 1;
+				printf("%f", va_arg(arg, double)), index = 1;
 				break;
 			case 'c':
 				printf("%c", va_arg(arg, int)), index = 1;

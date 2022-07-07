@@ -22,10 +22,10 @@ void print_all(const char * const format, ...)
 
 	va_start(arg, format);
 	count = index = 0;
-	while (format != NULL && format[count] != 0)
+	while (format != 0 && format[count] != 0)
 	{
 		entry = 0;
-		while (argType[entry] != 0)
+		while (argType[entry] != '\0')
 		{
 			if (format[count] == argType[entry] && index != 0)
 			{

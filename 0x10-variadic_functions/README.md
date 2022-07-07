@@ -1,14 +1,14 @@
 # ALX SOFTWARE ENGINEERING PROGRAM 
 
-Author:         @PraisesPJMT
-Date:           07.07.2022 22:05 UTC+1
+> Author:         @PraisesPJMT
+> Date:           07.07.2022 22:05 UTC+1
 
 
 ## 0x10. C - Variadic functions
 Project introduces the concept of C programming
 
-Repo:   alx-low_level_programming
-Dir:    0x10-variadic_functions
+- **Repo:**   alx-low_level_programming
+- **Dir:**    0x10-variadic_functions
 
 ## Tasks
 - 00 - Beauty is variable, ugliness is constant

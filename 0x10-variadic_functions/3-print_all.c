@@ -25,7 +25,7 @@ void print_all(const char * const format, ...)
 	while (format != 0 && format[count] != 0)
 	{
 		entry = 0;
-		while (argType[entry] != '\0')
+		while (argType[entry] != 0)
 		{
 			if (format[count] == argType[entry] && index != 0)
 			{

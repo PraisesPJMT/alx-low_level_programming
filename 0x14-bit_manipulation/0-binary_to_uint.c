@@ -9,7 +9,7 @@
  *	Zero (0) if b is NULL
  */
 unsigned int binary_to_uint(const char *b)
-
+{
 	unsigned int value = 0;
 
 	if (b == NULL)
